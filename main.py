@@ -4,6 +4,8 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from algorithms.fib.fib import *
 from algorithms.fib.fibit import *
+from visualiser.visualiser import Visualiser as vs
+from graphviz import Digraph
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -14,11 +16,15 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-for i in range(40):
-  print(fibit(i))
+#print("fibit")
+#for i in range(6):
+#  print(fibit(i))
 
-for i in range(40):
-    print(fib(i))
+print("fib")
+#for i in range(6):
+   # print(fib(i))
 
+print(fib(n=6))
+vs.make_animation("fibonacci.gif", delay=2)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
